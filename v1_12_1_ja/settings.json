@@ -1,3 +1,5 @@
+{
+
   // よく使用するもの (10) 
   
   // フォント サイズをピクセル単位で制御します。
@@ -1263,3 +1265,5 @@
 
   // Ignores the warning when there are too many changes in a repository
   "git.ignoreLimitWarning": false
+  
+  }
