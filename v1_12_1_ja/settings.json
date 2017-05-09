@@ -1122,3 +1122,5 @@
   // Ignores the warning when there are too many changes in a repository
   "git.ignoreLimitWarning": false
   
+  }  
+  
