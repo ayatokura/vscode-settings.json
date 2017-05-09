@@ -1087,158 +1087,14 @@
 
   // Controls whether auto detection of Gulp tasks is on or off. Default is on.
   "gulp.autoDetect": "on",
-
-  // Python configuration (2)
-
-  // Controls the maximum number of problems produced by the server.
-  "python.maxNumberOfProblems": 100,
-
-  // The linter to use
-  "python.linter": "pyLint",
-
-  // ruby language settings (4)
-
-  // Defines where the Ruby extension will look to find Modules, Classes and methods.
-  "ruby.locate": {
-    "exclude": "{**/@(test|spec|tmp|.*),**/@(test|spec|tmp|.*)/**,**/*_spec.rb}",
-    "include": "**/*.rb"
-  },
-
-  // Path to the Ruby interpreter.  Set this to an absolute path to select from multiple installed Ruby versions.
-  "ruby.interpreter.commandPath": "ruby",
-
-  // Path to the rct-complete command.  Set this to an absolute path to select from multiple installed Ruby versions.
-  "ruby.rctComplete.commandPath": "rct-complete",
-
-  // Set individual ruby linters to use
-  "ruby.lint": {},
-
-  // C# configuration (4)
-
-  // Suppress the warning that the .NET CLI is not on the path.
-  "csharp.suppressDotnetInstallWarning": false,
-
-  // If the current Linux distribution is not recognized, this option can be used to tell the debugger what version can be used. After changing this option, close VS Code, remove the debugger folder (~/.vscode/extensions/ms-vscode.csharp-<ver>/.debugger) if it has already downloaded, and restart VS Code.
-  "csharp.fallbackDebuggerLinuxRuntimeId": "",
-
-  // Suppress the notification window to perform a 'dotnet restore' when dependencies can't be resolved.
-  "csharp.suppressDotnetRestoreNotification": false,
-
-  // Specifies the full path to the OmniSharp server.
-  "omnisharp.path": null,
-
-  // Launch OmniSharp with Mono.
-  "omnisharp.useMono": false,
-
-  // Pass the --debug flag when launching the OmniSharp server to allow a debugger to be attached.
-  "omnisharp.waitForDebugger": false,
-
-  // Specifies the level of logging output from the OmniSharp server.
-  "omnisharp.loggingLevel": "information",
-
-  // Specifies whether the OmniSharp server will be automatically started or not. If false, OmniSharp can be started with the 'Restart OmniSharp' command
-  "omnisharp.autoStart": true,
-
-  // The time Visual Studio Code will wait for the OmniSharp server to start. Time is expressed in seconds.
-  "omnisharp.projectLoadTimeout": 60,
-
-  // The maximum number of projects to be shown in the 'Select Project' dropdown (maximum 250).
-  "omnisharp.maxProjectResults": 250,
-
-  // Specifes whether OmniSharp should use VS Code editor settings for C# code formatting (use of tabs, indentation size).
-  "omnisharp.useEditorFormattingSettings": true,
-
-  // PowerShell Configuration (21)
-
-  // Starts PowerShell extension features automatically when a PowerShell file opens. If false, to start the extension, use the 'PowerShell: Restart Current Session' command. IntelliSense, code navigation, integrated console, code formatting, and other features are not enabled until the extension starts.
-  "powershell.startAutomatically": true,
-
-  // Uses the 32-bit language service on 64-bit Windows. This setting has no effect on 32-bit Windows or on the PowerShell extension debugger, which has its own architecture configuration.
-  "powershell.useX86Host": false,
-
-  // Loads user and system-wide PowerShell profiles (profile.ps1 and Microsoft.VSCode_profile.ps1) into the PowerShell session. This affects IntelliSense and interactive script execution, but it does not affect the debugger.
-  "powershell.enableProfileLoading": true,
-
-  // Enables real-time script analysis from PowerShell Script Analyzer. Uses the newest installed version of the PSScriptAnalyzer module or the version bundled with this extension, if it is newer.
-  "powershell.scriptAnalysis.enable": true,
-
-  // Specifies the path to a PowerShell Script Analyzer settings file. To override the default settings for all projects, enter an absolute path, or enter a path relative to your workspace.
-  "powershell.scriptAnalysis.settingsPath": "",
-
-  // An array of strings that enable experimental features in the PowerShell extension.
-  "powershell.developer.featureFlags": [],
-
-  // Specifies the full path to a PowerShell executable. Changes the installation of PowerShell used for language and debugging services.
-  "powershell.developer.powerShellExePath": "",
-
-  // Indicates that the powerShellExePath points to a developer build of Windows PowerShell and configures it for development.
-  "powershell.developer.powerShellExeIsWindowsDevBuild": false,
-
-  // Specifies an alternate path to the folder containing modules that are bundled with the PowerShell extension (i.e. PowerShell Editor Services, PSScriptAnalyzer, Plaster)
-  "powershell.developer.bundledModulesPath": "",
-
-  // Sets the logging verbosity level for the PowerShell Editor Services host executable.  Valid values are 'Verbose', 'Normal', 'Warning', and 'Error'
-  "powershell.developer.editorServicesLogLevel": "Normal",
-
-  // Launches the language service with the /waitForDebugger flag to force it to wait for a .NET debugger to attach before proceeding.
-  "powershell.developer.editorServicesWaitForDebugger": false,
-
-  // Places open brace on the same line as its associated statement.
-  "powershell.codeFormatting.openBraceOnSameLine": true,
-
-  // Adds a newline (line break) after an open brace.
-  "powershell.codeFormatting.newLineAfterOpenBrace": true,
-
-  // Adds a newline (line break) after a closing brace.
-  "powershell.codeFormatting.newLineAfterCloseBrace": true,
-
-  // Adds a space between a keyword and its associated scriptblock expression.
-  "powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
-
-  // Adds a space between a keyword (if, elseif, while, switch, etc) and its associated conditional expression.
-  "powershell.codeFormatting.whitespaceBeforeOpenParen": true,
-
-  // Adds spaces before and after an operator ('=', '+', '-', etc.).
-  "powershell.codeFormatting.whitespaceAroundOperator": true,
-
-  // Adds a space after a separator (',' and ';').
-  "powershell.codeFormatting.whitespaceAfterSeparator": true,
-
-  // Does not reformat one-line code blocks, such as "if (...) {...} else {...}".
-  "powershell.codeFormatting.ignoreOneLineBlock": true,
-
-  // Shows the integrated console when the PowerShell extension is initialized.
-  "powershell.integratedConsole.showOnStartup": true,
-
-  // Switches focus to the console when a script selection is run or a script file is debugged. This is an accessibility feature. To disable it, set to false.
-  "powershell.integratedConsole.focusConsoleOnExecute": true,
-
-  // HTML-Hint configuration (2)
-
-  // Control whether htmlhint is enabled for HTML files or not.
-  "htmlhint.enable": true,
-
-  // The htmlhint options object to provide args to the htmlhint command.
-  "htmlhint.options": {},
-
+ 
   // Grunt (1)
 
   // Controls whether auto detection of Grunt tasks is on or off. Default is on.
   "grunt.autoDetect": "on",
 
-  // Pandoc Option Configuration (3)
-
-  // pandoc .pdf output option template that you would like to use
-  "pandoc.pdfOptString": "",
-
-  // pandoc .docx output option template that you would like to use
-  "pandoc.docxOptString": "",
-
-  // pandoc .html output option template that you would like to use
-  "pandoc.htmlOptString": "",
-
   // Git (9)
-
+  
   // Whether git is enabled
   "git.enabled": true,
 
@@ -1266,4 +1122,3 @@
   // Ignores the warning when there are too many changes in a repository
   "git.ignoreLimitWarning": false
   
-  }
